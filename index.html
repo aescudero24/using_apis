@@ -3,66 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather Central</title>
+    <title>Quotes of the Day</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="main">
-      <h1>Welcome to Weather Central!</h1>
-      <section id="input_form">
-        <form onsubmit="submitForm(event)">
-          <label for="location_field">City and State <u>or</u> ZIP Code:</label>
-          <input
-            id="location_field"
-            name="location_field"
-            type="text"
-            oninput="setSubmitButtonState()"
-          />
-          <input
-            id="submit_button"
-            type="submit"
-            value="Submit"
-            disabled
-            onsubmit="submitForm(event)"
-          />
-        </form>
-      </section>
-      <section id="current_weather">
-        <h2>Current weather for <span id="weather_location"></span></h2>
-        <dl>
-          <dt>Description:</dt>
-          <dd id="weather_description"></dd>
-          <dt>Temperature:</dt>
-          <dd id="weather_temperature"></dd>
-          <dt>Feels Like:</dt>
-          <dd id="weather_feels_like"></dd>
-          <dt>Barometric Pressure:</dt>
-          <dd id="weather_barometric_pressure"></dd>
-          <dt>Humidity:</dt>
-          <dd id="weather_humidity"></dd>
-          <div>
-            Winds
-            <div>
-              <dt>Speed:</dt>
-              <dd id="weather_wind_speed"></dd>
-              <dt>Direction:</dt>
-              <dd id="weather_wind_direction"></dd>
-              <dt>Gusts:</dt>
-              <dd id="weather_wind_gusts"></dd>
-            </div>
-          </div>
-          <dt>Clouds:</dt>
-          <dd id="weather_clouds"></dd>
-          <div>
-            Rain
-            <dt>Last hour:</dt>
-            <dd id="weather_rain_last_hour"></dd>
-            <dt>Last 3 hour:</dt>
-            <dd id="weather_rain_last_three_hours"></dd>
-          </div>
-        </dl>
-      </section>
+    <div class="quote-box">
+      <h2>Quotes of the Day</h2>
+      <blockquote>Loading...</blockquote>
+      <span>Loading...</span>
+      <div>
+        <button>New Quote</button>
+        <button>Tweet</button>
+      </div>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
