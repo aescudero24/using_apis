@@ -24,13 +24,13 @@ body {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.quote-box h2 {
+.quote-box #heading {
   font-size: 32px;
   margin-bottom: 40px;
   position: relative;
 }
 
-.quote-box h2::after {
+.quote-box #heading::after {
   content: "";
   width: 75px;
   height: 3px;
@@ -42,24 +42,24 @@ body {
   transform: translateX(-50%);
 }
 
-.quote-box blockquote {
+.quote-box #quote {
   font-size: 26px;
   min-height: 110px;
 }
 
-.quote-box blockquote::before,
-.quote-box blockquote::after {
+.quote-box #quote::before,
+.quote-box #quote::after {
   content: '"';
 }
 
-.quote-box span {
+.quote-box #author {
   display: block;
   margin-top: 10px;
   float: right;
   position: relative;
 }
 
-.quote-box span::before {
+.quote-box #author::before {
   content: "";
   width: 20px;
   height: 2px;
@@ -69,14 +69,14 @@ body {
   left: -30px;
 }
 
-.quote-box div {
+.quote-box #bottom {
   width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
-.quote-box button {
+.quote-box .btn {
   background: lightcoral;
   color: #fff;
   border-radius: 25px;
@@ -90,12 +90,12 @@ body {
   cursor: pointer;
 }
 
-.quote-box button img {
+/* .quote-box .btn .logo {
   width: 20px;
   margin-right: 20px;
-}
+} */
 
-.quote-box button:nth-child(2) {
+/* .quote-box .btn:nth-child(2) {
   background: transparent;
   color: #333;
-}
+} */

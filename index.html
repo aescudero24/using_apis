@@ -8,12 +8,12 @@
   </head>
   <body>
     <div class="quote-box">
-      <h2>Quote of the Day</h2>
+      <h2 id="heading">Quote of the Day</h2>
       <blockquote id="quote">Loading...</blockquote>
       <span id="author">Loading...</span>
-      <div>
-        <button onclick="getQuote(api_url)">New Quote</button>
-        <!-- <button onclick="tweet()"><img src="images/twitter.png" />Tweet</button> -->
+      <div id="bottom">
+        <button class="btn" onclick="getQuote(api_url)">New Quote</button>
+        <!-- <button class="btn" onclick="tweet()"><img class="logo" src="images/twitter.png" />Tweet</button> -->
       </div>
     </div>
     <script src="main.js"></script>
